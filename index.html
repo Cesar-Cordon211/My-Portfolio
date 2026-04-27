@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo" data-key="page_title"><a href="#">My <span>Portfolio</span></a></div>
+            <ul class="menu">
+                <div class="lang-switch">
+                    <button onclick="setLanguage('en')">EN</button>
+                    <button onclick="setLanguage('es')">ES</button>
+                </div>
+                <li><a href="#home" class="menu-btn" data-key="nav_home">Home</a></li>
+                <li><a href="#about" class="menu-btn" data-key="nav_about">About</a></li>
+                <li><a href="#services" class="menu-btn" data-key="nav_services">Services</a></li>
+                <li><a href="#skills" class="menu-btn" data-key="nav_skills">Skills</a></li>
+                <li><a href="#projects" class="menu-btn" data-key="nav_projects">Projects</a></li>
+                <li><a href="#contact" class="menu-btn" data-key="nav_contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home content -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text1" data-key="home_intro">Hello, my name is</div>
+                <div class="text2">Cesar Cordon</div>
+                <div class="text3" data-key="home_role">and I'm a <span>Web Developer & Designer</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title" data-key="about_title">About Me</h2>
+            <div class="about-content">
+                <div class="column">
+                    <div class="text" data-key="about_header">My name is Cesar and I'm a <span>Web Developer & Designer</span></div>
+                    <p data-key="about_p1">I'm a web developer focused on building clean, responsive, and user friendly websites. I enjoy turning ideas into functional, visually appealing experiences using HTML, CSS, JavaScript, and modern tools.</p>
+
+                    <p data-key="about_p2">Alongside development, I've worked in a family trucking business managing billing, customer communication, and daily operations. This experience has given me a strong understanding of how real businesses operate and how technology can improve efficiency and user experience.</p>
+
+                    <p data-key="about_p3">I'm detail oriented, adaptable, and always looking to improve my skills. I take pride in writing clean, maintainable code and building projects that are both practical and effective.</p>
+
+                    <p data-key="about_p4">I'm currently open to work and looking for opportunities as a web developer where I can continue learning and contribute to meaningful projects.</p>
+                    <button type="button" class="hire-btn" data-key="resume_btn">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title" data-key="section_title">What I Can Do</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text" data-key="card1_title">Web Development</div>
+                        <p data-key="card1_p">I build responsive, fast, and user friendly websites using modern technologies like HTML, CSS, and JavaScript. From landing pages to full business sites.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text" data-key="card2_title">UI / Web Design</div>
+                        <p data-key="card2_p">I design clean and modern interfaces focused on usability and user experience, making sure your website looks professional on all devices.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="text" data-key="card3_title">Business Solutions</div>
+                        <p data-key="card3_p">With real experience in a trucking business, I understand workflows like billing, communication, and operations allowing me to build practical solutions for real world needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title" data-key="skills_title">My Skills</h2>
+            <div class="skills-content">
+
+                <div class="column left">
+                    <div class="text" data-key="skills_heading">My Skills & Experience</div>
+                    <p data-key="skills_p1">I have a strong foundation in front end web development, with experience building responsive and user friendly websites using HTML, CSS, and JavaScript. 
+                        I focus on writing clean, maintainable code and creating interfaces that work smoothly across different devices.</p>
+
+                    <p data-key="skills_p2">In addition to development, I have hands on experience working in a real business environment, managing billing systems, customer communication, and daily operations. 
+                        This allows me to approach projects with both technical and practical problem solving in mind.</p>
+
+                    <p data-key="skills_p3">I am continuously improving my skills and expanding my knowledge to stay up to date with modern web technologies and best practices.</p>
+                    <a href="#projects" data-key="project_btn">View My Work</a>
+                </div>
+            
+                <div class="column right">
+                    <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span data-key="advanced">Advanced</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span data-key="advanced">Advanced</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span data-key="intermediate">Intermediate</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span data-key="intermediate">Intermediate</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span data-key="intermediate">Intermediate</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+     <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title" data-key="project_title">My Other Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/sunland_trucking_logo.png" alt="">
+                        <div class="text" data-key="website1_title">Sunland Trucking LLC</div>
+                        <p data-key="website1_p">A trucking website for a company based in Phoenix, AZ.</p>
+                        <a href="https://github.com/Cesar-Cordon211/sunlandtruckingllc.git" data-key="github_link">GitHub Link</a>
+                        <a href="https://cesar-cordon211.github.io/sunlandtruckingllc/index.html" data-key="website_link">Website Link</a>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="box">
+                        <img src="images/marisol-logo.png" alt="">
+                        <div class="text" data-key="website2_title">Taller de Ropa Marisol (Marisol's Clothing Workshop)</div>
+                        <p data-key="website2_p">A simple website that uses a clothing theme to match what their services.</p>
+                        <a href="https://github.com/Cesar-Cordon211/Taller-de-Ropa-Marisol.git">GitHub Link</a>
+                        <a href="https://cesar-cordon211.github.io/Taller-de-Ropa-Marisol/">Website Link</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="images/favicon.ico" alt="">
+                        <div class="text" data-key="website3_title">Video Games (final project)</div>
+                        <p data-key="website3_p">This is an old school project I made as a final project for a class. One of the first Websites I ever published.</p>
+                        <a href="https://github.com/Cesar-Cordon211/video-game-website.git" data-key="github_link">GitHub Link</a>
+                        <a href="https://cesar-cordon211.github.io/video-game-website/" data-key="website_link">Website Link</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title" data-key="contact_title">Contact Me</h2>
+
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text" data-key="contact_heading">Get in Touch</div>
+                    <p data-key="contact_p1">I'm currently open to new opportunities as a web developer and available for freelance or full-time work. Whether you need a website built, improved, or have a project idea, I'd be happy to help.</p>
+                    <p data-key="contact_p2">Feel free to reach out and I'll get back to you as soon as possible.</p>
+
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head" data-key="name">Name</div>
+                            <div class="sub-title">Cesar Cordon</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head" data-key="address">Address</div>
+                            <div class="sub-title">Phoenix, Arizona</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head" data-key="email">Email</div>
+                            <div class="sub-title">
+                                <a href="mailto:cesarecordon@gmail.com">cesarecordon@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <div class="text" data-key="form_title">Message me</div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="43c92f7e-d7bf-4f37-afa6-c8ea18975468">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" data-key-placeholder="form_name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" data-key-placeholder="form_email" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" data-key-placeholder="form_subject" required>
+                        </div>
+
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Your message..." data-key-placeholder="form_message"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" data-key="form_button">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+     <footer>
+        <span data-key="footer">Created By <a href="#">Cesar Cordon</a></span>
+     </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
