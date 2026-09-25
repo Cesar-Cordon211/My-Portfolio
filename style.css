@@ -129,6 +129,12 @@ html {
     border: 2px solid #fff;
 }
 
+.lang-switch button.active-lang {
+    background: #00A8FF;
+    border-color: #00A8FF;
+    color: #fff;
+}
+
 /* home styles */
 .home {
     display: flex;
